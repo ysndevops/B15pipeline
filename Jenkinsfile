@@ -59,7 +59,7 @@ pipeline{
             steps{
                 echo "Taking approval from Manager for NEXUS REPO artifact push "
                 timeout(time: 7, unit: 'DAYS') {
-                input message: 'Do you want to deploy  WAR ON PRE PROD env?', submitter: 'devops'
+                input message: 'Do you want to deploy  WAR to NEXUS Artifactory REPO', submitter: 'devops'
             }
             }
         }
